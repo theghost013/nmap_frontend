@@ -1,0 +1,17 @@
+# NetMAPPER
+Créer une interface web pour l'outil CLI `nmap`.
+
+- En utilisant la documentation officielle ([https://nmap.org/book/man-briefoptions.html]), **implémentez au moins une option de scan** (e.g. `-sS`, `-sV`, etc.) **et au moins 3 options** (e.g. `--max-retries`, `--host-timeout`, etc.) ;
+- Vous devez stocker les résultats de chaque requête dans une base de données ;
+- Vous devez utiliser MongoDB comme moteur de base de données et Mongoose.js ;
+- Votre interface doit présenter au moins 3 pages :
+    - l'interface de requête (un formulaire) ;
+    - la page d'historique (une liste de toutes les requêtes passées) ;
+    - les détails d'une requête passée, montrant la sortie d'une `nmap` pour le résultat d'une requête précédente stockée dans la base de données, mais aussi toutes les options utilisées pour cette requête dans le formulaire de requête ;
+- Vous pouvez utiliser n'importe quel cadre ou code source des leçons ;
+- Vous pouvez réaliser une API synchrone ou asynchrone ;
+- Mais dans les deux cas, vous devrez traiter toutes les requêtes indépendamment du frontend (c'est-à-dire que si l'utilisateur quitte la page de requête, la requête ne doit pas être interrompue du côté du backend, et toutes les informations doivent être stockées correctement dans la base de données).
+
+Pour vous aider, voici un extrait de la documentation du site officiel de NodeJS : [https://nodejs.org/dist/latest-v19.x/docs/api/child\_process.html#child\_processspawncommand-args-options]
+
+Bonne chance.
